@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+.solvg_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #ebf0fc;
+}
+
+.solvg_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 1rem; /* Adjust margin for smaller screens */
+}
+
+.solvg_card {
+  position: relative;
+  height: 300px;
+  width: 800px; /* Change width to adapt to container's width */
+  margin: 1rem;
+  margin-bottom: 4rem; /* Reduce margin-bottom for smaller screens */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.1);
+}
+
+.solvg_card:hover {
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.2);
+}
+
+.serv_tophead {
+  font-weight: 600;
+  font-size: 3rem; /* Adjust font-size for smaller screens */
+  color: #030f27;
+  margin-top: 1rem; /* Adjust margin-top for smaller screens */
+}
+
+.solv_p {
+  font-size: 1.4rem; /* Adjust font-size for smaller screens */
+  font-weight: 400;
+  margin-top: -1rem;
+  color: rgb(239, 227, 227);
+  text-align: center; /* Center align the text */
+}
+
+.solvg_card .solvg_imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 140px;
+  margin-left: 1rem; /* Adjust margin-left for smaller screens */
+  margin-top: 60px;
+}
+
+.solvg_card .solvg_contentBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(37, 38, 48);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.solvg_card:hover .solvg_contentBox::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.solvg_card .solvg_contentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solvg_card .solvg_contentBox .solvgc_content {
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+  transform: translateX(-100%); /* Adjust translateX value for smaller screens */
+}
+
+.solvg_card:hover .solvg_contentBox .solvgc_content {
+  transform: translateX(0);
+}
+
+.solvg_card .solvg_contentBox .solvgc_content .solvgc_h3 {
+  font-size: 1.6rem; /* Adjust font-size for smaller screens */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.solvg_card .solvg_contentBox .solvgc_content .solvgc_p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center; /* Center align the text */
+}
+
+.solvgice_h1 {
+  position: absolute;
+  margin-top: 15rem;
+  margin-left: 3.4rem;
+  color: #030f22;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.solv_p2 {
+  font-size: 1.6rem; /* Adjust font-size for smaller screens */
+  font-weight: 400;
+  margin-top: -6rem; /* Adjust margin-top for smaller screens */
+  color: #8c89a2;
+  text-align: center; /* Center align the text */
+}
+
+.solv_p2,
+span {
+  text-align: center;
+  justify-content: center;
+}
